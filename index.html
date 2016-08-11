@@ -40,9 +40,9 @@ var projection = d3.geo.mercator()
     .translate([(width) / 2, (height)/2]);
 var path = d3.geo.path()
     .projection(projection);
-d3.json("map.json", function(error, map) {
+d3.json("map4.json", function(error, map4) {
   svg.selectAll(".subunit")
-      .data(topojson.feature(map, map.objects.subunits).features)
+      .data(topojson.feature(map4, map4.objects.subunits).features)
     .enter().append("path")
       .attr("class", function(d) { return "subunit " + d.id; })
       .attr("d", path);
