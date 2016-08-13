@@ -13,8 +13,8 @@
   stroke-width:1px;
 }  
 .subunit {
-  fill: #ffffff ;
-  stroke: #e5e5e5;
+  fill: #e5e5e5 ;
+  stroke: #ffffff;
   stroke-width:1px;
 }
 
@@ -92,15 +92,9 @@ var t1 = textures.paths()
   .d("waves")
     .lighter()
     .thicker()
-    .background("white")
-    .stroke("#4A79A5");
+    .background("4A79A5")
+    .stroke("#white");
     
-var t2 = textures.lines()
-    .orientation("horizontal")
-    .thicker()
-    .lighter()
-    .stroke("lightgrey");
-
 var svg = d3.select("#map").append("svg")
     .attr("width", width)
     .attr("height", height);
@@ -114,11 +108,7 @@ getPattern = function(province) {
     switch (province.toLowerCase()) {
       case "w":
         return t1.url();
-      case "a":
-        return t2.url();
-      case "b":
-        return t2.url();  
-      
+
     }
   };        
 
