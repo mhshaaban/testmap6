@@ -38,18 +38,40 @@ button
     transition: all 0.15s;
   }
 
+button:hover
+  {
+    background-color: #555;
+    color: white;
+    border-bottom: 3px solid #222;
+  }
+
+button.selected
+  {
+    background-color: #555;
+    color: white;
+    border-bottom: 3px solid #222;
+  }
+
+.sort_label
+  {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: .15em;
+    color: #555;
+  }
+  
 </style>
 
 <header>
 <h2>Test Map</h2>	
 
-div class="clear"></div>
       <div class="sorts">
-        <span class="sort_label">Map data</span>
+        <span class="sort_label">Map Data</span>
 
-        <button id="map_1250" class="sort state_sort">map 1250</button>
-        <button id="map_1350" class="sort state_sort">map 1350</button>
-        <button id="map_1450" class="sort state_sort">map 1450</button>
+        <button id="map_1250" class="sort state_sort">map 1</button>
+        <button id="map_1350" class="sort state_sort">map 2</button>
+        <button id="map_1450" class="sort state_sort">map 3</button>
       
       </div>
 </header>
