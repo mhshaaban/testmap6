@@ -7,11 +7,15 @@
   width:960px;
   height:500px;
 }
-.subunit.M { fill: #FF9933; }
+.subunit.M { 
+  fill: #FF9933;
+  stroke: #FF9933;
+  stroke-width:1px;
+}  
 .subunit {
   fill: #ffffff ;
   stroke: #e5e5e5;
-  stroke-width:2px;
+  stroke-width:1px;
 }
 </style>
 
@@ -33,6 +37,7 @@ var width = 960,
 
 var t1 = textures.paths()
   .d("waves")
+    .lighter()
     .background("lightblue")
     .stroke("white");
 
